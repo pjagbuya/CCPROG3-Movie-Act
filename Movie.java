@@ -286,6 +286,7 @@ public class Movie {
             return true;
         }
 
+        // First checks if the parameter is null and then compare title, genre, and year
         return thatMovie != null && ((this.TITLE).equalsIgnoreCase(thatMovie.TITLE) && 
                (this.genre).equalsIgnoreCase(thatMovie.genre) && 
                this.year == thatMovie.year);
