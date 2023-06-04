@@ -35,7 +35,7 @@ public class Movie {
             this.genre = genre;
         }
 
-        if(year > 1900){
+        if(year >= 1900){
             this.year = year;
         }
         else{
@@ -252,7 +252,7 @@ public class Movie {
      * 
      * @return the number of times a movie was created by this class
      */
-    public int getMovieCount() {
+    public static int getMovieCount() {
         return movieCount;
     }
 
@@ -261,6 +261,7 @@ public class Movie {
      * This method returns the concatentation of the movie's title, year, and genre
      * 
      * For Example: Frozen, 2013, kids
+     * 
      * @return concatentation of the movie's title, year, and genre
      */
     @Override
@@ -275,7 +276,6 @@ public class Movie {
      * instance of Movie. It returns false if not identical, else it will return true.
      * 
      * @param thatMovie is another Movie object that is compared to this current instance of a Movie class
-     * 
      * @return true if the parameter is identical or the title, genre, and year is the same. This would
      *         otherwise return false if thatMovie was null or at least one of parameter's attribute formerly
      *         mentioned is not equal to this current instance's

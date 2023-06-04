@@ -28,7 +28,7 @@ public class MovieDriver {
         mustWatch[3] = new Movie("Frozen 2",2019);
 
         // Display the total number of movies instantiated
-        System.out.println("Number of movies instantiated: " + mustWatch[0].getMovieCount());
+        System.out.println("Number of movies instantiated: " + Movie.getMovieCount());
 
         // Display the title, genre, and year of all movies in mustWatch
         for (i = 0; i < mustWatch.length; i++) {
@@ -88,7 +88,7 @@ public class MovieDriver {
         }
 
         // Display the total number of movies instantiated
-        System.out.println("Total number of movies instantiated: " + myRental[0].getMovieCount());
+        System.out.println("Total number of movies instantiated: " + Movie.getMovieCount());
 
         //  Display the title, genre, and year of all movies in mustWatch 
         for (i = 0; i < mustWatch.length; i++) {
@@ -118,7 +118,7 @@ public class MovieDriver {
 
         // Update the total number of movies instantiated. Display the total number of movies instantiated
         Movie.decrementMovieCount();
-        System.out.println("Total number of movies instantiated: " + mustWatch[1].getMovieCount());
+        System.out.println("Total number of movies instantiated: " + Movie.getMovieCount());
 
         // Clean up
         mustWatch = null;
