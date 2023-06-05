@@ -1,5 +1,5 @@
 /** The class Movie represents a movie
-  * available and listed from iTunes
+  * available and listed from iTunes.
   *
   * @author Paul Josef P. Agbuya
   * @author Vince Kenneth D. Rojo
@@ -10,14 +10,14 @@ public class Movie {
 
     
     /**
-     * This constructor intitializes the title, genre, and the year
+     * This constructor initializes the title, genre, and the year
      * the movie was made in the iTunes platform based on the parameters
      * given. It also checks if the genre provided is valid to be set as 
      * an attribute else continue the default movie genre as comedy. It would
-     * then check if the year is validly at least 1900 to set or else will 
-     * set default as 2020. Furthermore, initializes an array of actors 
+     * then check if the year is valid. If it is at least 1900, it sets or else it
+     * sets to 2020 as default. Furthermore, initializes an array of actors 
      * which can only contain a maximum of 5 Strings. Lastly, sets default
-     * value of rentCount to 0 and increments the movieCount
+     * value of rentCount to 0 and increments the movieCount.
      * 
      * @param title the title of the movie
      * @param genre the classfied genre of the movie
@@ -46,13 +46,13 @@ public class Movie {
     }
 
     /**
-     * This constructor intitializes the title and genre of the
+     * This constructor initializes the title and genre of the
      * movie created in the iTunes platform based on the parameters
      * given. It also checks if the genre provided is valid to be set as 
      * an attribute else continue the default movie genre as comedy. 
      * Furthermore, initializes an array of actors which can only 
      * contain a maximum of 5 Strings. Lastly, sets default value of rentCount
-     * to 0, default value of year to 2020, and increments the movieCount
+     * to 0, default value of year to 2020, and increments the movieCount.
      * 
      * @param title the title of the movie
      * @param genre the classfied genre of the movie
@@ -63,14 +63,14 @@ public class Movie {
 
 
     /**
-     * This constructor intitializes the title, genre, and one actor in the
+     * This constructor initializes the title, genre, and one actor in the
      * movie created in the iTunes platform based on the parameters
      * given. It also checks if the genre provided is valid to be set as 
      * an attribute or else continue the default movie genre as comedy. 
      * Furthermore, initializes an array of actors which can only contain a maximum of
      * 5 Strings. The parameter actor should be filling the first slot of 
      * this array. Lastly, sets default value of rentCount to 0, default 
-     * value of year to 2020, and increments the movieCount
+     * value of year to 2020, and increments the movieCount.
      * 
      * @param title the title of the movie
      * @param genre the classfied genre of the movie
@@ -83,7 +83,7 @@ public class Movie {
     }
 
     /**
-     * This constructor intitializes the title and year that the
+     * This constructor initializes the title and year that the
      * movie created in the iTunes platform based on the parameters
      * given. It also sets the default genre of the movie as comedy. 
      * It would then check if the year is validly at least 1900 to set 
@@ -105,7 +105,7 @@ public class Movie {
      * check if it is valid to be set as genre or else does not change the original
      * genre attribute.
      * 
-     * @param genre the classfied genre of the movie
+     * @param genre the classified genre of the movie
      */
     public void setGenre(String genre) {
 
@@ -118,7 +118,7 @@ public class Movie {
     /**
      * This method sets the year of the movie based on the parameter given. But it
      * would first check if it is at least from 1900 or else it will not change and retain
-     * the original value of the year
+     * the original value of the year.
      * 
      * @param year the year the movie was released
      */
@@ -133,7 +133,7 @@ public class Movie {
     /**
      * This method checks if the parameter can be added to the String
      * array, if so it would add it in the array. When the array is full
-     * it will not continue to add the parameter actor in the array
+     * it will not continue to add the parameter actor in the array.
      * 
      * @param actor the actor that is within the movie
      */
@@ -153,7 +153,7 @@ public class Movie {
      * This method checks if the parameter can be allowed as an attribute of genre from
      * the set list of genres.
      * 
-     * @param genre the classfied genre of the movie
+     * @param genre the classified genre of the movie
      * @return true if genre is part of the list of genres, else when it is not then
      *         this method will return false
      */  
@@ -177,7 +177,7 @@ public class Movie {
 
     /**
      * This method increments movieCount to count the number of
-     * created movies
+     * created movies.
      */
     public void rent() {
         rentCount++;
@@ -185,7 +185,7 @@ public class Movie {
 
     /**
      * This method checks if the rentCount of the movie is at least
-     * the value of 10 000
+     * the value of 10 000.
      * 
      * @return true if the rentCount is greater than or equal to 10000,
      *         else will return false when less than 10000
@@ -196,7 +196,7 @@ public class Movie {
 
 
     /**
-     * This method returns the title of the movie
+     * This method returns the title of the movie.
      * 
      * @return the String indicating the title of the movie
      */
@@ -216,7 +216,7 @@ public class Movie {
 
 
     /**
-     * This method returns the year the movie was released
+     * This method returns the year the movie was released.
      * 
      * @return the number that indicates the year of the movie was released
      */
@@ -226,7 +226,7 @@ public class Movie {
 
 
     /**
-     * This method returns the list of actors in a manner of a String array
+     * This method returns the list of actors in a manner of a String array.
      * 
      * @return String array indicating the actors of a movie
      */
@@ -236,7 +236,7 @@ public class Movie {
 
 
     /**
-     * This method returns the amount of times the movie was rented
+     * This method returns the amount of times the movie was rented.
      * 
      * @return the number of times the movie was rented
      */
@@ -246,7 +246,7 @@ public class Movie {
 
 
     /**
-     * This method returns the number of times a movie was created by this class
+     * This method returns the number of times a movie was created by this class.
      * 
      * @return the number of times a movie was created by this class
      */
@@ -256,11 +256,11 @@ public class Movie {
 
 
     /**
-     * This method returns the concatentation of the movie's title, year, and genre
+     * This method returns the concatenation of the movie's title, year, and genre.
      * 
      * For Example: Frozen, 2013, kids
      * 
-     * @return concatentation of the movie's title, year, and genre
+     * @return concatenation of the movie's title, year, and genre
      */
     @Override
     public String toString() {
@@ -293,7 +293,7 @@ public class Movie {
     /**
      * This method decreases only the movieCount or the attribute indicating the number 
      * of movies currently available. While it is not zero, this method will decrease the count
-     * by 1
+     * by 1.
      */ 
     public static void decrementMovieCount() {
         if (movieCount > 0){
@@ -305,7 +305,7 @@ public class Movie {
 
     /** Title of the movie */
     private final String TITLE;
-    /**Genre that the movie is classfied as */
+    /**Genre that the movie is classified as */
     private String genre;
     /**Year the movie is released */
     private int year;
