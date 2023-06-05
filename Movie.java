@@ -23,7 +23,7 @@ public class Movie {
      * @param genre the classfied genre of the movie
      * @param year the year the movie was released
      */
-    Movie(String title, String genre, int year) {
+    public Movie(String title, String genre, int year) {
         this.TITLE = title;
         this.genre = "comedy";
         this.year = year;
@@ -57,7 +57,7 @@ public class Movie {
      * @param title the title of the movie
      * @param genre the classfied genre of the movie
      */
-    Movie(String title, String genre) {
+    public Movie(String title, String genre) {
         this(title, genre, 2020);
     }
 
@@ -76,7 +76,7 @@ public class Movie {
      * @param genre the classfied genre of the movie
      * @param actor the actor that is within the movie
      */
-    Movie(String title, String genre, String actor) {
+    public Movie(String title, String genre, String actor) {
         this(title, genre, 2020);
         addActor(actor);
 
@@ -95,7 +95,7 @@ public class Movie {
      * @param title the title of the movie
      * @param year the year the movie was released
      */
-    Movie(String title, int year) {
+    public Movie(String title, int year) {
         this(title,"comedy", year);
     }
 
