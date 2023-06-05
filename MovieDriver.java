@@ -41,7 +41,7 @@ public class MovieDriver {
                 System.out.println(mustWatch[i].getTitle() + ", " + mustWatch[i].getGenre() + ", " + mustWatch[i].getYear());
         }
 
-        // Modify genre of first movie in mustWatch to sci-f
+        // Modify genre of first movie in mustWatch to sci-fi
         mustWatch[0].setGenre("sci-fi");
 
         // Modify genre of 4th movie in mustWatch to kids
@@ -78,7 +78,7 @@ public class MovieDriver {
         // Display all actors of the second movie stored in mustWatch
         System.out.println("The actors of Thor are: " + Arrays.toString(mustWatch[1].getActors()));
         
-        // Declare and instantiate another array of at most 3 movies called myRenta
+        // Declare and instantiate another array of at most 3 movies called myRental
         Movie[] myRental = new Movie[3];
 
         /* Rent all movies that are in the genre of kids from mustWatch. These movies should now be 
