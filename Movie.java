@@ -133,21 +133,19 @@ public class Movie {
     /**
      * This method checks if the parameter can be added to the String
      * array, if so it would add it in the array. When the array is full
-     * it would then return false, signifying the parameter cannot be added
+     * it will not continue to add the parameter actor in the array
      * 
      * @param actor the actor that is within the movie
-     * @return true if actor can be added to the array, else when the array is full
-     *         this method will return false
      */
-    public boolean addActor(String actor) {
+    public void addActor(String actor) {
         int i;
         for (i = 0; i < actors.length; i++) {
             if (actors[i] == null) {
                 actors[i] = actor;
-                return true;
             }
         }
-        return false;
+
+
     }
 
 
@@ -294,10 +292,14 @@ public class Movie {
 
     /**
      * This method decreases only the movieCount or the attribute indicating the number 
-     * of movies currently available
-     */
+     * of movies currently available. While it is not zero, this method will decrease the count
+     * by 1
+     */ 
     public static void decrementMovieCount() {
-        movieCount--;
+        if (movieCount > 0){
+            movieCount--;
+        }
+        
     }
 
 

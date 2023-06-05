@@ -3,6 +3,11 @@ import java.util.Arrays;
  * Class MovieDriver is a driver class that is used
  * to create instances of the Movie Class in simulating
  * its use in creating Movies in the iTunes
+ * 
+ * @author Paul Josef P. Agbuya
+ * @author Vince Kenneth D. Rojo
+ * @author Acemere F. Villena
+ * @version 1.0
  */
 public class MovieDriver {
     public static void main(String[] args) {
